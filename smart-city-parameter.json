@@ -1,0 +1,67 @@
+{
+  "name": "smart-city-parameter",
+  "description": "ชุดทดสอบความสม่ำเสมอของพารามิเตอร์ (Parameter/Robustness) ด้านเมืองอัจฉริยะ ตรวจสอบว่า AI ให้คำตอบคงที่สม่ำเสมอเมื่อถามคำถามเดียวกันในรูปแบบต่างกัน ทั้งภาษาทางการ ภาษาพูด คำศัพท์เทคนิค และภาษาอังกฤษ",
+  "metric": "consistency_score",
+  "test_cases": [
+    {
+      "input": "แผนแม่บทเมืองอัจฉริยะประเทศไทย มีกี่ด้าน",
+      "context": "แผนแม่บทเมืองอัจฉริยะประเทศไทย โดย depa กำหนดให้มี 7 ด้าน (7 Smart) ได้แก่ Smart Environment, Smart Mobility, Smart Living, Smart Economy, Smart People, Smart Governance, Smart Energy",
+      "expected_output": "7 ด้าน"
+    },
+    {
+      "input": "Smart City ไทย แบ่งออกเป็นกี่มิติ",
+      "context": "แผนแม่บทเมืองอัจฉริยะประเทศไทย โดย depa กำหนดให้มี 7 ด้าน (7 Smart) ได้แก่ Smart Environment, Smart Mobility, Smart Living, Smart Economy, Smart People, Smart Governance, Smart Energy",
+      "expected_output": "7 ด้าน"
+    },
+    {
+      "input": "How many dimensions does Thailand's Smart City framework cover?",
+      "context": "แผนแม่บทเมืองอัจฉริยะประเทศไทย โดย depa กำหนดให้มี 7 ด้าน (7 Smart) ได้แก่ Smart Environment, Smart Mobility, Smart Living, Smart Economy, Smart People, Smart Governance, Smart Energy",
+      "expected_output": "7 ด้าน"
+    },
+    {
+      "input": "เป้าหมาย Smart City ของไทยคือมีกี่เมืองภายในปีใด",
+      "context": "depa กำหนดเป้าหมายให้ประเทศไทยมีเมืองอัจฉริยะอย่างน้อย 100 เมืองภายในปี 2570",
+      "expected_output": "100 เมืองภายในปี 2570"
+    },
+    {
+      "input": "รัฐบาลตั้งเป้าทำ Smart City ให้ได้กี่เมืองภายในปีไหน",
+      "context": "depa กำหนดเป้าหมายให้ประเทศไทยมีเมืองอัจฉริยะอย่างน้อย 100 เมืองภายในปี 2570",
+      "expected_output": "100 เมืองภายในปี 2570"
+    },
+    {
+      "input": "What is Thailand's target number of smart cities and by which year?",
+      "context": "depa กำหนดเป้าหมายให้ประเทศไทยมีเมืองอัจฉริยะอย่างน้อย 100 เมืองภายในปี 2570",
+      "expected_output": "100 เมืองภายในปี 2570"
+    },
+    {
+      "input": "ขอนแก่นมีโครงการรถไฟฟ้ารางเบาระยะทางเท่าไร",
+      "context": "โครงการรถไฟฟ้ารางเบา (LRT) ขอนแก่น เส้นทาง สำราญ-ท่าพระ มีระยะทาง 22.6 กิโลเมตร ดำเนินการโดยบริษัท ขอนแก่น ทรานซิท ซิสเต็ม จำกัด (KKTS)",
+      "expected_output": "22.6 กิโลเมตร"
+    },
+    {
+      "input": "LRT ขอนแก่น ยาวกี่กิโลเมตร",
+      "context": "โครงการรถไฟฟ้ารางเบา (LRT) ขอนแก่น เส้นทาง สำราญ-ท่าพระ มีระยะทาง 22.6 กิโลเมตร ดำเนินการโดยบริษัท ขอนแก่น ทรานซิท ซิสเต็ม จำกัด (KKTS)",
+      "expected_output": "22.6 กิโลเมตร"
+    },
+    {
+      "input": "How long is the Khon Kaen LRT route?",
+      "context": "โครงการรถไฟฟ้ารางเบา (LRT) ขอนแก่น เส้นทาง สำราญ-ท่าพระ มีระยะทาง 22.6 กิโลเมตร ดำเนินการโดยบริษัท ขอนแก่น ทรานซิท ซิสเต็ม จำกัด (KKTS)",
+      "expected_output": "22.6 กิโลเมตร"
+    },
+    {
+      "input": "หน่วยงานใดรับผิดชอบหลักในการขับเคลื่อน Smart City ของไทย",
+      "context": "สำนักงานส่งเสริมเศรษฐกิจดิจิทัล (depa) ภายใต้กระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม เป็นหน่วยงานหลักรับผิดชอบการขับเคลื่อนเมืองอัจฉริยะของประเทศไทย",
+      "expected_output": "สำนักงานส่งเสริมเศรษฐกิจดิจิทัล (depa)"
+    },
+    {
+      "input": "ใครดูแลเรื่อง Smart City ในไทย",
+      "context": "สำนักงานส่งเสริมเศรษฐกิจดิจิทัล (depa) ภายใต้กระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม เป็นหน่วยงานหลักรับผิดชอบการขับเคลื่อนเมืองอัจฉริยะของประเทศไทย",
+      "expected_output": "สำนักงานส่งเสริมเศรษฐกิจดิจิทัล (depa)"
+    },
+    {
+      "input": "Which Thai agency is primarily responsible for smart city development?",
+      "context": "สำนักงานส่งเสริมเศรษฐกิจดิจิทัล (depa) ภายใต้กระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม เป็นหน่วยงานหลักรับผิดชอบการขับเคลื่อนเมืองอัจฉริยะของประเทศไทย",
+      "expected_output": "สำนักงานส่งเสริมเศรษฐกิจดิจิทัล (depa)"
+    }
+  ]
+}

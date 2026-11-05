@@ -1,0 +1,57 @@
+{
+  "name": "smart-city-accuracy",
+  "description": "ชุดทดสอบความถูกต้อง (Accuracy) ของคำตอบ AI ด้านเมืองอัจฉริยะ (Smart City) ครอบคลุมแผนแม่บทเมืองอัจฉริยะประเทศไทย 7 ด้าน (Smart Environment, Smart Mobility, Smart Living, Smart Economy, Smart People, Smart Governance, Smart Energy) รวมถึงโครงการนำร่องและเทคโนโลยีที่ใช้จริง",
+  "metric": "accuracy",
+  "test_cases": [
+    {
+      "input": "แผนแม่บทเมืองอัจฉริยะประเทศไทย กำหนดเป้าหมายกี่ด้าน อะไรบ้าง",
+      "context": "สำนักงานส่งเสริมเศรษฐกิจดิจิทัล (depa) กำหนดแผนแม่บทเมืองอัจฉริยะประเทศไทยโดยแบ่งเป็น 7 ด้าน (Smart) ได้แก่ (1) Smart Environment - สิ่งแวดล้อมอัจฉริยะ (2) Smart Mobility - การเดินทางและขนส่งอัจฉริยะ (3) Smart Living - การดำรงชีวิตอัจฉริยะ (4) Smart Economy - เศรษฐกิจอัจฉริยะ (5) Smart People - พลเมืองอัจฉริยะ (6) Smart Governance - การบริหารภาครัฐอัจฉริยะ (7) Smart Energy - พลังงานอัจฉริยะ โดยมีเป้าหมายให้มีเมืองอัจฉริยะอย่างน้อย 100 เมืองภายในปี 2570",
+      "expected_output": "7 ด้าน ได้แก่ Smart Environment, Smart Mobility, Smart Living, Smart Economy, Smart People, Smart Governance, Smart Energy เป้าหมาย 100 เมืองภายในปี 2570"
+    },
+    {
+      "input": "โครงการ Smart City ภูเก็ต มีการใช้เทคโนโลยีอะไรบ้าง",
+      "context": "ภูเก็ตเป็นหนึ่งในเมืองนำร่อง Smart City ของประเทศไทย โดยได้รับการประกาศเป็นเขตส่งเสริมเมืองอัจฉริยะจาก depa มีโครงการสำคัญ ได้แก่ (1) ระบบ Smart Pole ที่ติดตั้งกล้อง CCTV เซ็นเซอร์วัดคุณภาพอากาศ และจุดกระจาย WiFi (2) แพลตฟอร์ม Phuket Smart City Data Platform สำหรับรวบรวมข้อมูลการท่องเที่ยว จราจร และสภาพอากาศ (3) ระบบ Smart Parking ค้นหาที่จอดรถอัตโนมัติ (4) ระบบแจ้งเตือนภัยพิบัติ (Tsunami Early Warning) เชื่อมต่อ IoT (5) ระบบ Smart Bus ติดตาม GPS แบบ Real-time",
+      "expected_output": "Smart Pole (CCTV, เซ็นเซอร์อากาศ, WiFi), Phuket Smart City Data Platform, Smart Parking, ระบบแจ้งเตือนสึนามิเชื่อมต่อ IoT, Smart Bus GPS Real-time"
+    },
+    {
+      "input": "depa มีบทบาทอย่างไรในการขับเคลื่อน Smart City",
+      "context": "สำนักงานส่งเสริมเศรษฐกิจดิจิทัล (depa) เป็นหน่วยงานหลักในการขับเคลื่อนเมืองอัจฉริยะของประเทศไทย มีบทบาทสำคัญ ได้แก่ (1) กำหนดนโยบายและแผนแม่บทเมืองอัจฉริยะ (2) พิจารณาและประกาศเขตส่งเสริมเมืองอัจฉริยะ (Smart City Zone) (3) มอบตรา Smart City Badge ให้แก่เมืองที่ผ่านเกณฑ์ (4) สนับสนุนงบประมาณผ่าน Digital Transformation Fund (5) จัดทำ Smart City Standard Framework (6) ประสานงานกับ ASEAN Smart City Network (ASCN) และ (7) ฝึกอบรมและพัฒนาบุคลากรด้านเมืองอัจฉริยะ",
+      "expected_output": "กำหนดนโยบาย พิจารณาเขตส่งเสริม Smart City มอบ Smart City Badge สนับสนุนงบประมาณ จัดทำ Smart City Standard Framework ประสานงาน ASEAN Smart City Network และพัฒนาบุคลากร"
+    },
+    {
+      "input": "เมืองอัจฉริยะในประเทศไทยที่ได้รับตรา Smart City Badge มีที่ไหนบ้าง",
+      "context": "ณ ปี 2567 มีเมืองที่ได้รับการประกาศเป็นเขตส่งเสริมเมืองอัจฉริยะและได้รับตรา Smart City Badge จาก depa มากกว่า 30 เมือง ตัวอย่างเมืองสำคัญ ได้แก่ ภูเก็ต เชียงใหม่ ขอนแก่น ชลบุรี (EEC) กรุงเทพมหานคร (หลายเขต) นครราชสีมา สงขลา ระยอง ฉะเชิงเทรา แม่เมาะ (ลำปาง) และยะลา โดยแต่ละเมืองมีจุดเด่นต่างกัน เช่น ภูเก็ตเน้น Smart Tourism ขอนแก่นเน้น Smart Mobility เชียงใหม่เน้น Smart Environment",
+      "expected_output": "มากกว่า 30 เมือง เช่น ภูเก็ต เชียงใหม่ ขอนแก่น ชลบุรี กรุงเทพฯ นครราชสีมา สงขลา ระยอง ฉะเชิงเทรา แม่เมาะ และยะลา"
+    },
+    {
+      "input": "ระบบ Smart Mobility ในเมืองขอนแก่น มีอะไรบ้าง",
+      "context": "ขอนแก่นเป็นเมืองนำร่อง Smart City ที่เน้นด้าน Smart Mobility โดยมีโครงการสำคัญ ได้แก่ (1) โครงการรถไฟฟ้ารางเบา (LRT) ขอนแก่น เส้นทาง สำราญ-ท่าพระ ระยะทาง 22.6 กิโลเมตร ดำเนินการโดยบริษัท ขอนแก่น ทรานซิท ซิสเต็ม จำกัด (KKTS) ซึ่งเป็น PPP จากภาคเอกชนท้องถิ่น (2) ระบบ Khon Kaen Smart Bus ติดตาม GPS แบบ Real-time ผ่านแอปพลิเคชัน (3) ระบบจักรยานสาธารณะ Smart Bike (4) แพลตฟอร์ม City Data Platform รวมข้อมูลจราจรและการเดินทาง (5) ระบบสัญญาณไฟจราจรอัจฉริยะ (Adaptive Traffic Signal)",
+      "expected_output": "รถไฟฟ้ารางเบา LRT สำราญ-ท่าพระ 22.6 กม. ระบบ Smart Bus GPS Real-time จักรยานสาธารณะ Smart Bike City Data Platform และสัญญาณไฟจราจรอัจฉริยะ"
+    },
+    {
+      "input": "Smart Environment ในประเทศไทยใช้เทคโนโลยี IoT เซ็นเซอร์อะไรบ้าง",
+      "context": "ในด้าน Smart Environment เมืองอัจฉริยะของไทยใช้เทคโนโลยี IoT เซ็นเซอร์หลายประเภท ได้แก่ (1) เซ็นเซอร์วัดคุณภาพอากาศ PM2.5 ติดตั้งตามจุดต่างๆ ในกรุงเทพฯ เชียงใหม่ เชื่อมต่อกับระบบ Air Quality Index (AQI) (2) เซ็นเซอร์ตรวจวัดระดับน้ำแบบ Real-time ในคลองและแม่น้ำ เพื่อเตือนภัยน้ำท่วม (3) เซ็นเซอร์ Smart Waste Management ตรวจระดับขยะในถังอัจฉริยะ จัดเส้นทางเก็บขยะอัตโนมัติ (4) เซ็นเซอร์ Soil Moisture สำหรับ Smart Farming (5) ระบบ Smart Streetlight ปรับแสงอัตโนมัติตามปริมาณรถ/คน เพื่อประหยัดพลังงาน",
+      "expected_output": "เซ็นเซอร์วัด PM2.5 เซ็นเซอร์ตรวจระดับน้ำ Real-time เซ็นเซอร์ Smart Waste Management เซ็นเซอร์ Soil Moisture สำหรับ Smart Farming และระบบ Smart Streetlight"
+    },
+    {
+      "input": "EEC Smart City มีแผนพัฒนาอย่างไร",
+      "context": "เขตพัฒนาพิเศษภาคตะวันออก (EEC) ประกอบด้วย 3 จังหวัด คือ ชลบุรี ระยอง ฉะเชิงเทรา มีแผนพัฒนา Smart City ครอบคลุม (1) Smart Industrial Estate ใช้ IoT และ AI ในนิคมอุตสาหกรรม (2) 5G Testbed สำหรับ Smart Manufacturing (3) Digital Park Thailand ที่ศรีราชา เป็นศูนย์กลางนวัตกรรมดิจิทัล (4) ระบบ Autonomous Vehicle ทดลองในพื้นที่เฉพาะ (5) ระบบ Smart Grid บริหารจัดการพลังงาน (6) ระบบ Smart Port ที่ท่าเรือแหลมฉบัง Phase 3 ใช้ระบบ Automated Container Terminal (7) โครงการ Digital Twin สำหรับวางผังเมือง",
+      "expected_output": "Smart Industrial Estate, 5G Testbed, Digital Park Thailand ศรีราชา, Autonomous Vehicle, Smart Grid, Smart Port แหลมฉบัง Phase 3, Digital Twin สำหรับผังเมือง"
+    },
+    {
+      "input": "Smart Governance ในกรุงเทพมหานคร มีระบบอะไรบ้าง",
+      "context": "กรุงเทพมหานครพัฒนาระบบ Smart Governance หลายด้าน ได้แก่ (1) ระบบ Traffy Fondue แพลตฟอร์มรับแจ้งปัญหาเมืองผ่าน LINE Official พัฒนาโดย NECTEC มีผู้ใช้แจ้งปัญหากว่า 500,000 เรื่อง (2) ระบบ BMA GIS ข้อมูลภูมิสารสนเทศเชิงพื้นที่ (3) ระบบ Open Data กรุงเทพฯ เปิดเผยข้อมูลภาครัฐ (4) ระบบ e-Service สำหรับขอใบอนุญาตออนไลน์ (5) Dashboard ติดตามงบประมาณและโครงการแบบ Real-time (6) ระบบ Smart CCTV ของ สำนักงานตำรวจแห่งชาติ ที่เชื่อมข้อมูลกับ กทม.",
+      "expected_output": "Traffy Fondue แจ้งปัญหาเมืองผ่าน LINE, BMA GIS, Open Data กรุงเทพฯ, e-Service ขอใบอนุญาตออนไลน์, Dashboard ติดตามงบประมาณ Real-time, Smart CCTV"
+    },
+    {
+      "input": "Smart Energy ในประเทศไทยมีโครงการอะไรบ้าง",
+      "context": "ด้าน Smart Energy ในเมืองอัจฉริยะของไทย มีโครงการสำคัญ ได้แก่ (1) โครงการ Smart Grid ของ กฟผ. ที่แม่เมาะ จ.ลำปาง รวมระบบ Solar Rooftop, Energy Storage และ EV Charging Station (2) โครงการ Sandbox ซื้อขายไฟฟ้าระหว่างกัน (Peer-to-Peer Energy Trading) ผ่าน Blockchain ที่ มจธ. บางมด (3) ระบบ Smart Meter ของ กฟน. และ กฟภ. สำหรับอ่านมิเตอร์อัตโนมัติ (AMI) (4) โครงการ Floating Solar Farm ที่เขื่อนสิรินธร (5) ระบบ Demand Response ที่ช่วยลด Peak Demand",
+      "expected_output": "Smart Grid แม่เมาะ, Peer-to-Peer Energy Trading ด้วย Blockchain, Smart Meter AMI, Floating Solar Farm เขื่อนสิรินธร, ระบบ Demand Response"
+    },
+    {
+      "input": "ASEAN Smart City Network (ASCN) คืออะไร และเมืองไทยที่เป็นสมาชิกมีที่ไหนบ้าง",
+      "context": "ASEAN Smart City Network (ASCN) เป็นเครือข่ายเมืองอัจฉริยะอาเซียน จัดตั้งในปี 2561 ระหว่างการเป็นประธานอาเซียนของสิงคโปร์ มีเป้าหมายเพื่อส่งเสริมความร่วมมือด้านเมืองอัจฉริยะระหว่างประเทศสมาชิกอาเซียน 10 ประเทศ รวม 26 เมืองนำร่อง ประเทศไทยมี 3 เมืองที่เป็นสมาชิก ASCN ได้แก่ กรุงเทพมหานคร ชลบุรี และภูเก็ต โดย ASCN มีแผนปฏิบัติการ 5 ด้าน ได้แก่ Civic and Social, Health and Well-being, Safety and Security, Quality Environment, และ Built Infrastructure",
+      "expected_output": "เครือข่ายเมืองอัจฉริยะอาเซียน 26 เมืองนำร่อง ไทยมี 3 เมือง คือ กรุงเทพฯ ชลบุรี และภูเก็ต"
+    }
+  ]
+}
